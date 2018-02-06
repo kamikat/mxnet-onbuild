@@ -3,7 +3,19 @@ dist: trusty
 
 jobs:
   include:
-    - stage: build docker images
+    - stage: build cu70 images
       script:
         - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-        - IMAGE_PREFIX=kamikat/ CI_BUILD=1 ./build.sh
+        - IMAGE_PREFIX=kamikat/ CI_BUILD=1 TARGET=cu70 ./build.sh
+    - stage: build cu75 images
+      script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - IMAGE_PREFIX=kamikat/ CI_BUILD=1 TARGET=cu75 ./build.sh
+    - stage: build cu80 images
+      script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - IMAGE_PREFIX=kamikat/ CI_BUILD=1 TARGET=cu80 ./build.sh
+    - stage: build cu9x images
+      script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - IMAGE_PREFIX=kamikat/ CI_BUILD=1 TARGET=cu9x ./build.sh

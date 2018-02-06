@@ -32,6 +32,11 @@ build() {
                 onbuild
 }
 
+if [ "$CI_BUILD" == "1" -a -z "$TARGET" ]; then
+  echo >&2 "Variable TARGET is not set for CI builds."
+  exit 1
+fi
+
 build_batch() {
   build master $@
   build 0.12.0 $@
@@ -43,20 +48,18 @@ build_batch() {
   fi
 }
 
-if [ "$CI_BUILD" == "1" ]; then
-  exit 0
-fi
-
-build_batch 9.1 7 ubuntu16.04
-build_batch 9.0 7 ubuntu16.04
-build_batch 8.0 7 ubuntu16.04
-build_batch 8.0 6 ubuntu16.04
-build_batch 8.0 5 ubuntu16.04
-build_batch 8.0 7
-build_batch 8.0 6
-build_batch 8.0 5
-build_batch 7.5 6
-build_batch 7.5 5
-build_batch 7.5 4
-build_batch 7.5 3
-build_batch 7.0 4
+[ -z "$TARGET" -o "$TARGET" == "cu9x" ] && build_batch 9.1 7 ubuntu16.04
+[ -z "$TARGET" -o "$TARGET" == "cu9x" ] && build_batch 9.0 7 ubuntu16.04
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 7 ubuntu16.04
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 6 ubuntu16.04
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 5 ubuntu16.04
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 7
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 6
+[ -z "$TARGET" -o "$TARGET" == "cu80" ] && build_batch 8.0 5
+[ -z "$TARGET" -o "$TARGET" == "cu75" ] && build_batch 7.5 6
+[ -z "$TARGET" -o "$TARGET" == "cu75" ] && build_batch 7.5 5
+[ -z "$TARGET" -o "$TARGET" == "cu75" ] && build_batch 7.5 4
+[ -z "$TARGET" -o "$TARGET" == "cu75" ] && build_batch 7.5 3
+[ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 4
+[ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 3
+[ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 2
