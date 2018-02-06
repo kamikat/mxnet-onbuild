@@ -44,6 +44,8 @@ build_batch() {
   build  1.0.0 $@
   if [ "$CI_BUILD" == "1" ]; then
     docker push ${IMAGE_PREFIX:-""}mxnet-onbuild
+    docker images ${IMAGE_PREFIX:-""}mxnet-onbuild -q | xargs docker rmi
+    docker images ${IMAGE_PREFIX:-""}mxnet-base -q | xargs docker rmi
     docker images -q | xargs docker rmi
   fi
 }
