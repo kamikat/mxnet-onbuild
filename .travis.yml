@@ -7,5 +7,3 @@ jobs:
       script:
         - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
         - IMAGE_PREFIX=kamikat/ CI_BUILD=1 ./build.sh
-        - docker images kamikat/mxnet-onbuild
-        - docker push kamikat/mxnet-onbuild
