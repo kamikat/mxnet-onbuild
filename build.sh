@@ -43,6 +43,10 @@ build_batch() {
   fi
 }
 
+if [ "$CI_BUILD" == "1" ]; then
+  exit 0
+fi
+
 build_batch 9.1 7 ubuntu16.04
 build_batch 9.0 7 ubuntu16.04
 build_batch 8.0 7 ubuntu16.04
