@@ -48,46 +48,46 @@ build master 7.5 3
 build master 7.0 4
 
 # 1.0.0
-build 1.0.0 9.1 7 ubuntu16.04
-build 1.0.0 9.0 7 ubuntu16.04
-build 1.0.0 8.0 7 ubuntu16.04
-build 1.0.0 8.0 6 ubuntu16.04
-build 1.0.0 8.0 5 ubuntu16.04
-build 1.0.0 8.0 7
-build 1.0.0 8.0 6
-build 1.0.0 8.0 5
-build 1.0.0 7.5 6
-build 1.0.0 7.5 5
-build 1.0.0 7.5 4
-build 1.0.0 7.5 3
-build 1.0.0 7.0 4
+# build 1.0.0 9.1 7 ubuntu16.04
+# build 1.0.0 9.0 7 ubuntu16.04
+# build 1.0.0 8.0 7 ubuntu16.04
+# build 1.0.0 8.0 6 ubuntu16.04
+# build 1.0.0 8.0 5 ubuntu16.04
+# build 1.0.0 8.0 7
+# build 1.0.0 8.0 6
+# build 1.0.0 8.0 5
+# build 1.0.0 7.5 6
+# build 1.0.0 7.5 5
+# build 1.0.0 7.5 4
+# build 1.0.0 7.5 3
+# build 1.0.0 7.0 4
 
 # 0.11.0
-build 0.11.0 9.1 7 ubuntu16.04
-build 0.11.0 9.0 7 ubuntu16.04
-build 0.11.0 8.0 7 ubuntu16.04
-build 0.11.0 8.0 6 ubuntu16.04
-build 0.11.0 8.0 5 ubuntu16.04
-build 0.11.0 8.0 7
-build 0.11.0 8.0 6
-build 0.11.0 8.0 5
-build 0.11.0 7.5 6
-build 0.11.0 7.5 5
-build 0.11.0 7.5 4
-build 0.11.0 7.5 3
-build 0.11.0 7.0 4
+# build 0.11.0 9.1 7 ubuntu16.04
+# build 0.11.0 9.0 7 ubuntu16.04
+# build 0.11.0 8.0 7 ubuntu16.04
+# build 0.11.0 8.0 6 ubuntu16.04
+# build 0.11.0 8.0 5 ubuntu16.04
+# build 0.11.0 8.0 7
+# build 0.11.0 8.0 6
+# build 0.11.0 8.0 5
+# build 0.11.0 7.5 6
+# build 0.11.0 7.5 5
+# build 0.11.0 7.5 4
+# build 0.11.0 7.5 3
+# build 0.11.0 7.0 4
 
 # 0.12.0
-build 0.12.0 9.1 7 ubuntu16.04
-build 0.12.0 9.0 7 ubuntu16.04
-build 0.12.0 8.0 7 ubuntu16.04
-build 0.12.0 8.0 6 ubuntu16.04
-build 0.12.0 8.0 5 ubuntu16.04
-build 0.12.0 8.0 7
-build 0.12.0 8.0 6
-build 0.12.0 8.0 5
-build 0.12.0 7.5 6
-build 0.12.0 7.5 5
-build 0.12.0 7.5 4
-build 0.12.0 7.5 3
-build 0.12.0 7.0 4
+# build 0.12.0 9.1 7 ubuntu16.04
+# build 0.12.0 9.0 7 ubuntu16.04
+# build 0.12.0 8.0 7 ubuntu16.04
+# build 0.12.0 8.0 6 ubuntu16.04
+# build 0.12.0 8.0 5 ubuntu16.04
+# build 0.12.0 8.0 7
+# build 0.12.0 8.0 6
+# build 0.12.0 8.0 5
+# build 0.12.0 7.5 6
+# build 0.12.0 7.5 5
+# build 0.12.0 7.5 4
+# build 0.12.0 7.5 3
+# build 0.12.0 7.0 4
