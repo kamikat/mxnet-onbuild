@@ -2,6 +2,10 @@
 
 set -e
 
+if [ "$DEBUG" == "1" ]; then
+  set -x
+fi
+
 EXTRA_ARGS=$@
 
 build_base_image() {
@@ -65,3 +69,5 @@ build_batch() {
 [ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 4
 [ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 3
 [ -z "$TARGET" -o "$TARGET" == "cu70" ] && build_batch 7.0 2
+
+exit 0
