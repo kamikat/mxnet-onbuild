@@ -44,13 +44,13 @@ FROM kamikat/mxnet-onbuild:cu80-cudnn5-ubuntu14.04
 
 Build without authentication:
 
-```bash
+```
 docker build -t <tag> <context>
 ```
 
 Build with authentication (private repository):
 
-```bash
+```
 docker build . \
   --build-arg NETRC_HOST=<hostname> \
   --build-arg NETRC_USERNAME=<username> \
